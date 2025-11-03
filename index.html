@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231  Course Home Page  Jesus Rduardo Pinta Molina</title>
+    <meta name="description" content="Jesus Eduardo Pinta Molina WDD 231: Web Frontend Development I, W01 Assignment Home Page">
+    <meta name="author" content="Jesus Eduardo Pinta Molina">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="site logo" width="512" height="512">
+        <span>Jesús Eduardo Pinta Molina</span>
+        <button id="ham-btm" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2 class="h2">About Me</h2>
+            <p>
+                My name is Jesus Eduardo Pinta. I’m from Colombia and I’m 32 years old. 
+                I currently live with my family in Malta, which is a small island in the Mediterranean Sea.
+                I’ve been studying the software development program with BYU–Pathway for almost a year now, 
+                and it has been a process full of learning and very rewarding.
+                I’ve been a member of The Church of Jesus Christ of Latter-day Saints all my life, 
+                and I’ve really enjoyed the spiritually oriented approach to studying, 
+                it has truly been something very good.
+            </p>
+        </section>
+        <section class="photo">
+            <h2 class="h2">Student Photo</h2>
+            <img src="images/student-photo.webp" alt="student photo">
+        </section>
+        <section class="web">
+            <h2>Web Certificate Courses</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/eduardopinta93" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/eduardopinta/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16" height="16"></a>
+        </div>
+        <p>© <span id="currentyear"></span> Jesús Eduardo Pinta Molina Colombia</p>
+        <p class="lastModified"></p>
+    </footer>
+</body>
+</html>
