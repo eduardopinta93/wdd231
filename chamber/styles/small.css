@@ -1,81 +1,87 @@
 :root {
   --main-color: #1e293b;
   --secundary-color: #dce4f2;
-  --main-font:"Josefin Sans", sans-serif;
+  --main-font: "Josefin Sans", sans-serif;
   box-sizing: border-box;
 }
 
 /********************* HEADER ********************/
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  align-items: end;
+  column-gap: 8px;
+  background-color: var(--main-color);
+}
 
-header{
-    display: grid;
-    grid-template-columns: 24px auto 44px ;
-    padding: 5px 0 5px 10px;
-    align-items: end;
-    column-gap: 8px;
-    background-color: var(--main-color);
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
 }
-header img{
-    display: block;
-    width: 100%;
-    height: auto;
-    padding-bottom: 5px;
-}
-header span{
-    font-size: 1.2rem;
-    color: var(--secundary-color);
+
+header span {
+  font-size: 1.2rem;
+  color: var(--secundary-color);
 }
 
 /**************** HAMBURGER NAVIGATION ****************/
-
-.hamburger{
-    background-color: var(--secundary-color);
-    border: none;
-    color: var(--main-color);
-    cursor: pointer;
-    font-family: var(--main-font) ;
-    font-size: 1.5rem;
+.hamburger {
+  background-color: var(--secundary-color);
+  border: none;
+  color: var(--main-color);
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
 }
 
-.hamburger::before{
-    content: "\2630";
+.hamburger::before {
+  content: "\2630";
 }
+
 .hamburger.show::before {
-    content: "\00D7";
-    font-size: 3rem;
+  content: "\00D7";
+  font-size: 3rem;
 }
 
 /**************** NAVIGATION ****************/
+.navigation {
+  display: none;
+}
 
-.navigation{
-    display: none;
+.navigation.show {
+  display: block;
 }
-.navigation.show{
-    display: block;
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-color);
 }
-.navigation ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: var(--main-color);
+
+.navigation a:hover {
+  background-color: #010f29;
 }
-.navigation a:hover{
-    background-color: #010f29;
+
+.navigation a {
+  display: block;
+  padding: 0.8rem 10px;
+  color: white;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+  font-size: 1.2rem;
 }
-.navigation a{
-    display: block;
-    padding: .8rem 10px;
-    color: white;
-    text-decoration: none;
-    border-bottom: solid 1px #ddd;
-    font-size: 1.2rem;
+
+.navigation li.current {
+  background-color: #eee;
 }
-.navigation li.current{
-    background-color: #eee;
-}
-h1{
-    margin-left: 10px;
-    color: var(--main-color);
+
+h1 {
+  margin-left: 10px;
+  color: var(--main-color);
 }
 
 /****************** HERO SECTION ****************/
@@ -114,9 +120,7 @@ h1{
   background-color: #ffe27a;
 }
 
-
-/**************** FOTTER ****************/
-
+/**************** FOOTER ****************/
 footer {
   background-color: var(--main-color);
   color: #fff;
@@ -151,12 +155,12 @@ footer {
   color: var(--secundary-color);
 }
 
-/**********DIRECTORY***********/
-
+/**************** DIRECTORY ****************/
 .view-buttons {
   text-align: center;
   margin: 1rem;
 }
+
 .view-buttons button {
   background-color: white;
   border: 2px solid var(--main-color);
@@ -167,15 +171,20 @@ footer {
   border-radius: 5px;
   margin: 0 0.5rem;
 }
+
 .view-buttons button.active {
   background-color: var(--main-color);
   color: white;
 }
+
+/* GRID VIEW (default mobile layout) */
 .directory.grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
+
+/* LIST VIEW (mobile layout) */
 .directory.list section {
   display: flex;
   flex-direction: column;
@@ -184,6 +193,7 @@ footer {
   border-radius: 10px;
 }
 
+/* Zebra stripes for list view */
 .directory.list section:nth-child(odd) {
   background-color: #f9f9f9;
 }
@@ -192,18 +202,21 @@ footer {
   background-color: #e5ebf0;
 }
 
+/* Cards used in grid view */
 .directory.grid section {
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 1rem;
   border-radius: 10px;
 }
+
 .directory img {
   width: 100px;
   height: auto;
   margin-bottom: 0.5rem;
 }
+
 .directory a {
   color: #1e40af;
   text-decoration: none;
