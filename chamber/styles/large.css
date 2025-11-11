@@ -1,0 +1,116 @@
+@media only screen and (min-width: 38rem){
+  body {
+    font-size: 1rem;
+  }
+
+ /* HEADER */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    background-color: var(--main-color);
+  }
+
+  header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  header span {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: var(--secundary-color);
+  }
+
+  .hamburger {
+    display: none; /* Ocultamos el menú hamburguesa */
+  }
+
+.navigation {
+  display: block;
+  background-color: transparent;
+  width: auto;              /* evita ocupar todo el ancho */
+  position: absolute;       /* lo sacamos del flujo normal */
+  top: 2.5rem;              /* ajusta verticalmente según tu header */
+  right: 2rem;              /* lo coloca alineado a la derecha */
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation li {
+  border: none;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+  background-color: #475569;
+}
+
+  /* HERO */
+  .hero {
+    height: 450px;
+  }
+
+  .hero-button {
+    width: 200px;
+    bottom: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  /* FOOTER */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .footer-info {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+
+  .social {
+    text-align: center;
+  }
+
+  .lastModified {
+    text-align: left;
+    font-size: 0.85rem;
+    color: var(--secundary-color);
+  }
+}
+
+/**********DIRECTORY************/
+
+.directory.grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .directory.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    background-color: #eef3f7;
+  }
+  .directory.list img {
+    display: none;
+  }

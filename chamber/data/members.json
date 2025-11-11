@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Palmira Tech Solutions",
+      "address": "101 Innovation Ave, Palmira, FL 33101",
+      "phone": "(305) 555-1001",
+      "website": "https://palmiratech.com",
+      "image": "images/palmiratech.svg",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Sunshine Marketing",
+      "address": "202 Bright Blvd, Palmira, FL 33102",
+      "phone": "(305) 555-2002",
+      "website": "https://sunshinemarketing.com",
+      "image": "images/sunshinemarketing.svg",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Green Valley Farms",
+      "address": "303 Greenway Rd, Palmira, FL 33103",
+      "phone": "(305) 555-3003",
+      "website": "https://greenvalleyfarms.com",
+      "image": "images/greenvalley.svg",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Tropical Coffee Co.",
+      "address": "404 Aroma St, Palmira, FL 33104",
+      "phone": "(305) 555-4004",
+      "website": "https://tropicalcoffee.com",
+      "image": "images/tropicalcoffee.svg",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Palmira Fitness Club",
+      "address": "505 Energy Ave, Palmira, FL 33105",
+      "phone": "(305) 555-5005",
+      "website": "https://palmirafitness.com",
+      "image": "images/fitness.svg",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Blue Ocean Travel",
+      "address": "606 Adventure Dr, Palmira, FL 33106",
+      "phone": "(305) 555-6006",
+      "website": "https://blueoceantravel.com",
+      "image": "images/blueocean.svg",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Elegant Events & Catering",
+      "address": "707 Celebration Ln, Palmira, FL 33107",
+      "phone": "(305) 555-7007",
+      "website": "https://elegantevents.com",
+      "image": "images/elegantevents.svg",
+      "membershipLevel": 2
+    }
+  ]
+}
