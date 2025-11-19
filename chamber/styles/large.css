@@ -114,7 +114,7 @@
   .directory.list img {
     display: none;
   }
-}
+
 
 
 /**************** WEATHER SECTION (LARGE) ****************/
@@ -153,4 +153,5 @@
 
 .event-card {
   padding: 2rem;
+}
 }
