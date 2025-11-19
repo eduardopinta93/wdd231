@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  <meta name="description" content="Welcome to the Palmira Chamber of Commerce. Supporting business growth, community development, and local opportunities in the Palmira region." />
+  <meta name="author" content="Jesus Eduardo Pinta Molina" />
+
+  <title>Palmira Chamber of Commerce | Home</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+  
+  <link rel="icon" href="images/favicon-pamira.ico" />
+
+  
+  <meta property="og:title" content="Palmira Chamber of Commerce" />
+  <meta property="og:description" content="Promoting business success and community growth in Palmira." />
+  <meta property="og:image" content="https://eduardopinta93.github.io/wdd231/chamber/images/eduardo-pinta.jpg" />
+  <meta property="og:url" content="https://eduardopinta93.github.io/wdd231/chamber/index.html" />
+
+  
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+
+  
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+
+  <header>
+    <img src="images/palmira.jpg" alt="site logo" width="512" height="512">
+    <span>Palmira Chamber of Commerce</span>
+    <button id="ham-btm" class="hamburger"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  
+  <section class="hero">
+    <picture>
+      <source srcset="images/home-hero.jpeg" media="(max-width: 500px)">
+      <img src="images/home-hero.jpeg" alt="Panoramic view of Palmira Chamber of Commerce" />
+    </picture>
+
+   
+    <a class="hero-button" href="join.html">Join the Chamber</a>
+  </section>
+
+ 
+  <main>
+
+    
+    <section class="events">
+      <h2>Upcoming Events</h2>
+
+    <div class="event-card">
+      <h3>Business Networking Breakfast</h3>
+      <p class="event-date">March 12, 2025 – 9:00 AM</p>
+      <p class="event-location">Palmira Convention Center</p>
+      <p class="event-desc">
+      Connect with local entrepreneurs and discover new business opportunities in the Palmira region.
+      </p>
+    </div>
+
+    <div class="event-card">
+      <h3>Small Business Workshop</h3>
+      <p class="event-date">March 20, 2025 – 2:00 PM</p>
+      <p class="event-location">Business Hub, Downtown Palmira</p>
+      <p class="event-desc">
+      Learn marketing strategies, grants, and growth tools for your small business. Free registration!
+      </p>
+    </div>
+  </section>
+
+
+    
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <p>Temperature: <span id="current-temp"></span></p>
+      <figure>
+        <img id="weather-icon" src="" alt="">
+        <figcaption></figcaption>
+      </figure>
+      <div id="forecast"></div> 
+    </section>
+
+   
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-container"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <section class="footer-info">
+      <p>Palmira Chamber of Commerce</p>
+      <p>123 Main Street, Palmira Center, FL 33101</p>
+      <p>Email: info@palhamber.org</p>
+      <p>Phone: (305) 555-2300</p>
+    </section>
+
+    <div class="social">
+      <a href="https://github.com/eduardopinta93" target="_blank">
+        <img src="images/github.svg" alt="github">
+      </a>
+      <a href="https://www.linkedin.com/in/eduardopinta/" target="_blank">
+        <img src="images/linkedin.svg" alt="linkedin">
+      </a>
+      <a href="https://x.com/" target="_blank">
+        <img src="images/twitter-x.svg" alt="twitter-x">
+      </a>
+    </div>
+
+    <div class="footer-info">
+      <p>WDD231 Class Project</p>
+      <p>Jesus Eduardo Pinta</p>
+      <p>© <span id="currentyear"></span> Jesús Eduardo Pinta Molina Colombia</p>
+      <p class="lastModified"></p>
+    </div>
+  </footer>
+
+</body>
+</html>

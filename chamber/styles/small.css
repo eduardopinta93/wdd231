@@ -221,3 +221,115 @@ footer {
   color: #1e40af;
   text-decoration: none;
 }
+
+/**************** WEATHER SECTION ****************/
+.weather {
+  background-color: #f1f5f9;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.weather h2 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.weather p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.weather figure {
+  margin-top: 1rem;
+}
+
+.weather img {
+  width: 70px;
+  height: 70px;
+}
+
+.weather figcaption {
+  text-transform: capitalize;
+  margin-top: .5rem;
+}
+
+#forecast {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: .8rem;
+}
+
+#forecast div {
+  background-color: #fff;
+  padding: .7rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+
+/**************** SPOTLIGHTS ****************/
+.spotlights {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#spotlight-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.spotlight-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.spotlight-card img {
+  width: 100px;
+  margin-bottom: .5rem;
+}
+
+.spotlight-card a {
+  color: #1e40af;
+  text-decoration: none;
+}
+
+
+/**************** EVENTS SECTION ****************/
+.events {
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.events h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.event-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.event-card h3 {
+  margin-bottom: .3rem;
+  color: #1e293b;
+}
+
+.event-date,
+.event-location {
+  font-weight: bold;
+  margin: .2rem 0;
+  color: #334155;
+}

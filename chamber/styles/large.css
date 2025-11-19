@@ -115,3 +115,42 @@
     display: none;
   }
 }
+
+
+/**************** WEATHER SECTION (LARGE) ****************/
+.weather {
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.weather img {
+  width: 90px;
+  height: 90px;
+}
+
+#forecast {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+/**************** SPOTLIGHTS LARGE ****************/
+#spotlight-container {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 900px;
+  margin: auto;
+}
+
+.spotlight-card {
+  padding: 2rem;
+}
+
+
+/**************** EVENTS SECTION LARGE ****************/
+.events {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.event-card {
+  padding: 2rem;
+}
