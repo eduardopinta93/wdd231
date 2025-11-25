@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  <meta name="description" content="Apply to join the Palmira Chamber of Commerce. Complete the membership form and choose the level that best fits your organization." />
+
+  <meta name="author" content="Jesus Eduardo Pinta Molina" />
+
+  <title>Palmira Chamber of Commerce | Join</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+  
+  <link rel="icon" href="images/favicon-pamira.ico" />
+
+  
+  <meta property="og:title" content="Join the Palmira Chamber of Commerce" />
+  <meta property="og:description" content="Become a member and access business opportunities, networking, and exclusive chamber benefits." />
+  <meta property="og:image" content="https://eduardopinta93.github.io/wdd231/chamber/images/eduardo-pinta.jpg" />
+  <meta property="og:url" content="https://eduardopinta93.github.io/wdd231/chamber/join.html" />
+
+  
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+
+  
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+
+  <header>
+    <img src="images/palmira.jpg" alt="site logo" width="512" height="512">
+    <span>Palmira Chamber of Commerce</span>
+    <button id="ham-btm" class="hamburger"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html" class="current">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+<main class="join-container">
+      
+  <section class="join-form">
+    <h1>Membership Application Form</h1>
+
+    <form method="get" action="thankyou.html">
+
+      
+      <label>
+        First Name
+        <input type="text" name="fname" title="First Name" required autocomplete="given-name">
+      </label>
+
+      
+      <label>
+        Last Name
+        <input type="text" name="lname" title="Last Name" required autocomplete="family-name">
+      </label>
+
+      
+      <label>
+        Title
+        <input type="text" name="title" title="Organization Title"
+               autocomplete="organization-title"
+               pattern="[A-Za-z\s\-]{7,}"
+               placeholder="Manager, Director, etc.">
+      </label>
+
+      
+      <label>
+        Email
+        <input type="email" name="email" title="Email" required autocomplete="email"
+               placeholder="john89@gmail.com">
+      </label>
+
+      
+      <label>
+        Cell Phone
+        <input type="tel" name="phone" title="Mobile Phone" required autocomplete="tel">
+      </label>
+
+      
+      <label>
+        Organization
+        <input type="text" name="organization" title="Organization Name" required autocomplete="organization">
+      </label>
+
+      
+      <label>
+        Membership Level
+        <select name="membership" title="Membership Level" required>
+          <option value="" disabled selected>-- Select a Level --</option>
+          <option value="np">NP Membership (no fee)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      
+      <label>
+        Business Description
+        <textarea name="description" title="Business Description"></textarea>
+      </label>
+
+      
+      <input type="hidden" id="timestamp" name="timestamp">
+
+      
+      <button type="submit">Apply Now</button>
+
+    </form>
+  </section>
+
+
+  
+  <section class="membership-levels">
+    <h2>Membership Levels</h2>
+
+    <div class="membership-card" data-modal="modal-np">
+      <h3>Non Profit Membership Level</h3>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <div class="membership-card" data-modal="modal-bronze">
+      <h3>Bronze Membership Level</h3>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <div class="membership-card" data-modal="modal-silver">
+      <h3>Silver Membership Level</h3>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <div class="membership-card" data-modal="modal-gold">
+      <h3>Gold Membership Level</h3>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+  </section>
+
+  
+  <div id="modal-np" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Non Profit Membership Benefits</h3>
+      <p>No cost, basic directory listing, event invitations.</p>
+    </div>
+  </div>
+
+  <div id="modal-bronze" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Bronze Membership Benefits</h3>
+      <p>Discounted event tickets, newsletter ads, basic promotion.</p>
+    </div>
+  </div>
+
+  <div id="modal-silver" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Silver Membership Benefits</h3>
+      <p>Spotlight on homepage, increased ads, networking opportunities.</p>
+    </div>
+  </div>
+
+  <div id="modal-gold" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Gold Membership Benefits</h3>
+      <p>Premium advertising, VIP events, featured promotions.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+    <section class="footer-info">
+      <p>Palmira Chamber of Commerce</p>
+      <p>123 Main Street, Palmira Center, FL 33101</p>
+      <p>Email: info@palhamber.org</p>
+      <p>Phone: (305) 555-2300</p>
+    </section>
+
+    <div class="social">
+      <a href="https://github.com/eduardopinta93" target="_blank">
+        <img src="images/github.svg" alt="github">
+      </a>
+      <a href="https://www.linkedin.com/in/eduardopinta/" target="_blank">
+        <img src="images/linkedin.svg" alt="linkedin">
+      </a>
+      <a href="https://x.com/" target="_blank">
+        <img src="images/twitter-x.svg" alt="twitter-x">
+      </a>
+    </div>
+
+    <div class="footer-info">
+      <p>WDD231 Class Project</p>
+      <p>Jesus Eduardo Pinta</p>
+      <p>© <span id="currentyear"></span> Jesús Eduardo Pinta Molina Colombia</p>
+      <p class="lastModified"></p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -154,4 +154,32 @@
 .event-card {
   padding: 2rem;
 }
+
+/******** JOIN PAGE DESKTOP ********/
+.join-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.join-form h1 {
+  text-align: left;
+}
+
+.membership-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.membership-card {
+  margin: 0;
+}
+
+ .thankyou-container {
+    padding: 2rem 3rem;
+  }
 }

@@ -336,3 +336,148 @@ footer {
 main h1{
   text-align: center;
 }
+
+/******** JOIN PAGE *********/
+.join-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.join-form h1 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.join-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.join-form button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.join-form button[type="submit"]:hover {
+  background-color: #334155;
+}
+
+/******* MEMBERSHIP CARDS *********/
+.membership-levels {
+  text-align: center;
+}
+
+.membership-levels h2 {
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.membership-card {
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.membership-card.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.membership-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.membership-card .learn-more {
+  padding: 0.5rem 1rem;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/******* MODALS *********/
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* THANK YOU PAGE */
+.thankyou-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.thankyou-container h1 {
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.thankyou-list p {
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.thankyou-list span {
+  font-weight: 600;
+}

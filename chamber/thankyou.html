@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Thank you for applying to the Palmira Chamber of Commerce." />
+  <meta name="author" content="Jesus Eduardo Pinta Molina" />
+
+  <title>Thank You | Palmira Chamber of Commerce</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="images/favicon-pamira.ico" />
+
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+
+<header>
+    <img src="images/palmira.jpg" alt="site logo" width="512" height="512">
+    <span>Palmira Chamber of Commerce</span>
+    <button id="ham-btm" class="hamburger"></button>
+</header>
+
+<nav id="nav-bar" class="navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="join.html">Join</a></li>
+    <li><a href="discover.html">Discover</a></li>
+  </ul>
+</nav>
+
+<main class="thankyou-container">
+  <h1>Thank You!</h1>
+  <p>Your application has been received. Below is a copy of your submitted information:</p>
+
+  <section class="submitted-info">
+      <p><strong>First Name:</strong> <span id="out-fname"></span></p>
+      <p><strong>Last Name:</strong> <span id="out-lname"></span></p>
+      <p><strong>Email:</strong> <span id="out-email"></span></p>
+      <p><strong>Phone:</strong> <span id="out-phone"></span></p>
+      <p><strong>Organization:</strong> <span id="out-org"></span></p>
+      <p><strong>Submission Time:</strong> <span id="out-timestamp"></span></p>
+  </section>
+</main>
+
+<footer>
+    <section class="footer-info">
+      <p>Palmira Chamber of Commerce</p>
+      <p>123 Main Street, Palmira Center, FL 33101</p>
+      <p>Email: info@palhamber.org</p>
+      <p>Phone: (305) 555-2300</p>
+    </section>
+
+    <div class="social">
+      <a href="https://github.com/eduardopinta93" target="_blank">
+        <img src="images/github.svg" alt="github">
+      </a>
+      <a href="https://www.linkedin.com/in/eduardopinta/" target="_blank">
+        <img src="images/linkedin.svg" alt="linkedin">
+      </a>
+      <a href="https://x.com/" target="_blank">
+        <img src="images/twitter-x.svg" alt="twitter-x">
+      </a>
+    </div>
+
+    <div class="footer-info">
+        <p>WDD231 Class Project</p>
+        <p>Jesus Eduardo Pinta</p>
+        <p>© <span id="currentyear"></span> Jesús Eduardo Pinta Molina Colombia</p>
+        <p class="lastModified"></p>
+    </div>
+</footer>
+
+</body>
+</html>
