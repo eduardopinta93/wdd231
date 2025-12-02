@@ -182,4 +182,44 @@
  .thankyou-container {
     padding: 2rem 3rem;
   }
+
 }
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+
+  .discover-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  .discover-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  /* Hover effect ONLY on desktop */
+  .hover-active img {
+    transition: transform 0.35s ease, filter 0.35s ease;
+  }
+
+  .hover-active img:hover {
+    transform: scale(1.06);
+    filter: brightness(1.15);
+  }
+}
+
