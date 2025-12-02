@@ -1,22 +1,20 @@
-// IMPORT DATA FROM MODULE
+
 import { places } from "../data/discover-items.mjs";
 
-// SELECT THE CONTAINER WHERE CARDS WILL APPEAR
+
 const container = document.querySelector(".discover-grid");
 
-// SELECT THE VISIT MESSAGE AREA
+
 const visitMessage = document.querySelector("#visit-message");
 
-// -------------------------------
-// 1. DISPLAY VISIT MESSAGE
-// -------------------------------
+
 
 function showVisitMessage() {
   const lastVisit = localStorage.getItem("lastVisit");
   const now = Date.now();
 
   if (!lastVisit) {
-    // FIRST VISIT
+   
     visitMessage.textContent = "Welcome! Let us know if you have any questions.";
   } else {
     const daysPassed = Math.floor((now - Number(lastVisit)) / (1000 * 60 * 60 * 24));
@@ -30,15 +28,13 @@ function showVisitMessage() {
     }
   }
 
-  // STORE CURRENT VISIT DATE
+  
   localStorage.setItem("lastVisit", now);
 }
 
 showVisitMessage();
 
-// -------------------------------
-// 2. GENERATE CARDS DYNAMICALLY
-// -------------------------------
+
 
 function generateCards() {
   places.forEach((place) => {
@@ -66,9 +62,7 @@ function generateCards() {
 
 generateCards();
 
-// -------------------------------
-// 3. IMAGE HOVER EFFECT (DESKTOP ONLY)
-// -------------------------------
+
 
 function enableHoverEffect() {
   if (window.innerWidth > 640) {

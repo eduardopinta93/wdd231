@@ -212,7 +212,7 @@
     padding: 2rem;
   }
 
-  /* Hover effect ONLY on desktop */
+  
   .hover-active img {
     transition: transform 0.35s ease, filter 0.35s ease;
   }

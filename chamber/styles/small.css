@@ -542,7 +542,7 @@ main h1{
   color: #1e3a8a;
 }
 
-/* NO hover effect on mobile */
+
 .hover-active img {
   transition: none;
 }
