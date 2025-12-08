@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact / Practice Form | Beginner’s Electric Bass Guide</title>
+  <meta name="description" content="Send a message, ask a question, or report your practice progress. This form helps beginners stay motivated and improve daily." />
+  <meta name="author" content="Jesus Eduardo Pinta Molina" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Electric Bass Practice Form" />
+  <meta property="og:description" content="Submit your questions or practice reports easily." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="images/favicon-bass.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo-area">
+    <img src="images/steve_harrys.webp" alt="Bass logo" width="64" height="64">
+    <div class="site-title">
+      <h1>Beginner’s Electric Bass Guide</h1>
+      <p>Start playing with confidence</p>
+    </div>
+  </div>
+
+  <button id="ham-btn" class="hamburger" aria-label="Toggle navigation"></button>
+</header>
+
+<nav id="nav-bar" class="navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="basics.html">Learn the Basics</a></li>
+    <li><a href="gear.html">Gear & Recommendations</a></li>
+    <li><a href="contact.html" class="current">Contact / Practice Form</a></li>
+  </ul>
+</nav>
+
+<main class="contact-page">
+
+  <h2>Contact & Practice Report</h2>
+  <p class="intro-text">Send a message, ask a question, or report your daily bass practice.</p>
+
+  <form method="get" action="thankyou.html" class="contact-form">
+
+    <label>
+      First Name
+      <input type="text" name="fname" autocomplete="given-name" required>
+    </label>
+
+    <label>
+      Last Name
+      <input type="text" name="lname" autocomplete="family-name" required>
+    </label>
+
+    <label>
+      Email
+      <input type="email" name="email" autocomplete="email" required placeholder="yourname@email.com">
+    </label>
+
+    <label>
+      Minutes Practiced Today
+      <input type="number" name="practice" min="0" max="600" required>
+    </label>
+
+    <label>
+      Your Message
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+
+    <!-- Timestamp -->
+    <input type="hidden" id="timestamp" name="timestamp">
+
+    <button type="submit">Send Message</button>
+
+  </form>
+
+</main>
+
+<footer>
+  <section class="footer-info">
+    <p>&copy; <span id="currentyear"></span> Beginner’s Electric Bass Guide</p>
+    <p>Created by: Jesus Eduardo Pinta Molina</p>
+  </section>
+
+  <section class="footer-links">
+    <a href="attributions.html">Attributions</a>
+    <a href="https://youtu.be/-Hhu80SCCZk" target="_blank">Project Demo Video</a>
+  </section>
+</footer>
+
+<script>
+  // Insert timestamp when form loads
+  document.getElementById("timestamp").value = Date.now();
+</script>
+
+</body>
+</html>

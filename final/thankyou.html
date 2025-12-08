@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Thank You | Electric Bass Guide</title>
+  <meta name="description" content="Confirmation page showing submitted form data.">
+  <meta name="author" content="Jesus Eduardo Pinta Molina">
+
+  <link rel="icon" href="images/favicon-bass.ico">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+
+<main class="thankyou-page">
+
+  <h2>Thank You for Your Submission!</h2>
+  <p>Here is the information you sent:</p>
+
+  <div class="thankyou-data">
+    <p><strong>First Name:</strong> <span id="out-fname"></span></p>
+    <p><strong>Last Name:</strong> <span id="out-lname"></span></p>
+    <p><strong>Email:</strong> <span id="out-email"></span></p>
+    <p><strong>Minutes Practiced:</strong> <span id="out-practice"></span></p>
+    <p><strong>Your Message:</strong> <span id="out-message"></span></p>
+    <p><strong>Submitted At:</strong> <span id="out-time"></span></p>
+  </div>
+
+</main>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+
+  document.getElementById("out-fname").textContent = params.get("fname");
+  document.getElementById("out-lname").textContent = params.get("lname");
+  document.getElementById("out-email").textContent = params.get("email");
+  document.getElementById("out-practice").textContent = params.get("practice");
+  document.getElementById("out-message").textContent = params.get("message");
+
+  const date = new Date(parseInt(params.get("timestamp")));
+  document.getElementById("out-time").textContent = date.toLocaleString();
+</script>
+
+</body>
+</html>

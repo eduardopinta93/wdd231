@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bass Gear for Beginners | Electric Bass Guide</title>
+  <meta name="description" content="Beginner-friendly gear recommendations for electric bass: cables, amps, headphones, accessories, and more." />
+  <meta name="author" content="Jesus Eduardo Pinta Molina" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Bass Gear Recommendations" />
+  <meta property="og:description" content="Essential equipment for new electric bass players." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tu-usuario.github.io/wdd231/final/images/gear-hero.webp" />
+
+  <link rel="icon" href="images/bass-logo.ico" />
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- SCRIPTS -->
+  <script src="scripts/navigation.js" defer></script>
+  <script type="module" src="scripts/gear.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-area">
+      <img src="images/steve_harrys.webp" alt="Bass logo" width="64" height="64">
+      <div class="site-title">
+        <h1>Beginner’s Electric Bass Guide</h1>
+        <p>Start playing with confidence</p>
+      </div>
+    </div>
+
+    <button id="ham-btn" class="hamburger" aria-label="Toggle navigation"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="basics.html">Learn the Basics</a></li>
+      <li><a href="gear.html" class="current">Gear & Recommendations</a></li>
+      <li><a href="contact.html">Contact / Practice Form</a></li>
+    </ul>
+  </nav>
+
+  <main class="gear-page">
+    <h2>Beginner Gear Recommendations</h2>
+    <p class="gear-intro">
+      Choosing the right equipment can make learning the electric bass much easier.
+      Here are beginner-friendly gear items with descriptions and suggestions.
+    </p>
+    <p id="last-viewed-message" class="last-viewed-message"></p>
+
+    <div id="gear-container" class="gear-grid"></div>
+
+    <!-- MODAL (hidden by default, filled dynamically) -->
+    <div id="gear-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="modal-close" class="close">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <section class="footer-info">
+      <p>&copy; <span id="currentyear"></span> Beginner’s Electric Bass Guide</p>
+      <p>Created by: Jesus Eduardo Pinta Molina</p>
+    </section>
+
+    <section class="footer-links">
+      <a href="attributions.html">Attributions</a>
+      <a href="https://youtu.be/-Hhu80SCCZk" target="_blank">Project Demo Video</a>
+    </section>
+  </footer>
+
+</body>
+</html>

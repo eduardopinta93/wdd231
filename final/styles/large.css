@@ -1,0 +1,202 @@
+/* ============================================
+   LARGE SCREEN STYLES (min-width: 768px)
+   ============================================ */
+@media (min-width: 768px) {
+
+  body {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  /* ============================================
+   HEADER + NAVIGATION (DESKTOP)
+============================================ */
+
+.hamburger {
+  display: none; /* hide menu button on large screens */
+}
+
+/* Header container */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  background: #0d47a1;
+  color: white;
+  border-bottom: 4px solid #08306b;
+}
+
+/* Logo + site title */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-area img {
+  width: 70px;
+  height: auto;
+}
+
+.site-title h1 {
+  font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 0.2rem;
+}
+
+.site-title p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* NAV HORIZONTAL */
+nav {
+  display: block !important;
+  position: static;
+  background: transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: 0.25s ease;
+}
+
+/* Hover + current */
+nav ul li a:hover,
+nav ul li a.current {
+  background: rgba(255,255,255,0.18);
+}
+
+
+  /* --------------------------
+     HERO SECTION
+  --------------------------- */
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 420px;
+    margin-top: 1rem;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text p {
+    line-height: 1.7;
+  }
+
+  /* --------------------------
+     MAIN CONTENT
+  --------------------------- */
+
+  main {
+    padding: 2rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  /* --------------------------
+     FOOTER
+  --------------------------- */
+
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    background: #111;
+    color: white;
+  }
+
+  footer .social img {
+    width: 32px;
+    margin: 0 0.5rem;
+    transition: 0.3s ease;
+  }
+
+  footer .social img:hover {
+    transform: scale(1.2);
+  }
+
+  /***************** GEAR PAGE — LARGE *****************/
+
+.gear-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.gear-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gear-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.modal-content {
+  max-width: 700px;
+}
+
+/* BASICS – LAYOUT FOR DESKTOP */
+
+  .basics-page {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .basics-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .basics-section:nth-child(even) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .basics-section img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+  }
+
+}
