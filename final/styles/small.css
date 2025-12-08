@@ -52,14 +52,14 @@ header img {
 .hamburger {
   width: 40px;
   height: 40px;
-  background: url("../images/hamburger.svg") no-repeat center;
+  background: url("https://eduardopinta93.github.io/wdd231/final/images/hamburger.svg") no-repeat center;
   background-size: 60%;
   border: none;
   cursor: pointer;
 }
 
 .hamburger.open {
-  background: url("../images/close.svg") no-repeat center;
+  background: url("https://eduardopinta93.github.io/wdd231/final/images/close.svg") no-repeat center;
   background-size: 60%;
 }
 
